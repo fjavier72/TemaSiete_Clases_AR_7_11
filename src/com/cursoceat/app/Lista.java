@@ -58,6 +58,27 @@ public class Lista {
 		}
 	}
 	
+	public void obtenerElemento(int indice) {
+		if (indice > (this.tabla.length - 1))
+			System.out.println("La tabla no es tan grande\n");
+		else {
+			System.out.println(this.tabla[indice].toString());
+		}
+	}
+	
+	public int buscarNumero(int numero) {
+		int contador = 0;
+		int indice = -1;
+		for (Integer elemento : tabla) {
+			if (elemento == numero) {
+				indice = contador;
+				break;
+			}
+			contador++;
+		}
+		return indice;
+	}
+	
 	public void mostrarElementos() {
 		for (Integer numero : this.tabla) {
 			System.out.print(numero + " ");
