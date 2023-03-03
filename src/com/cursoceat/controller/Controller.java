@@ -16,7 +16,7 @@ public class Controller {
 		lista1.mostrarElementos();
 		System.out.println("\n");
 		System.out.println("Lista 1 con el número '4' insertado en la posición de indice '3'");
-		lista1.insertarDoneSea(3, 4);
+		lista1.insertarDondeSea(3, 4);
 		lista1.mostrarElementos();
 		System.out.println("\n");
 		
@@ -30,6 +30,12 @@ public class Controller {
 		System.out.println("Lista 1 con los elementos de Lista 2 al final");
 		lista1.addNewListFinal(lista2);
 		lista1.mostrarElementos();
+		System.out.println("\n");
+		
+		System.out.println("Lista 1 con el elemento situado en la posición indice '3' eliminado");
+		lista1.eliminarElemento(3);
+		lista1.mostrarElementos();
+		System.out.println("\n");
 	}
 
 }
