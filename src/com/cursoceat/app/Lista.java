@@ -49,7 +49,7 @@ public class Lista {
 	
 	public void eliminarElemento(int indice) {
 		if (indice > (this.tabla.length - 1))
-			System.out.println("La tabla no es tan grande\n");
+			System.err.println("La tabla no es tan grande\n");
 		else {
 			Integer[] tablaAux = new Integer[this.tabla.length - 1];
 			System.arraycopy(this.tabla, 0, tablaAux, 0, indice);
@@ -60,7 +60,7 @@ public class Lista {
 	
 	public void obtenerElemento(int indice) {
 		if (indice > (this.tabla.length - 1))
-			System.out.println("La tabla no es tan grande\n");
+			System.err.println("La tabla no es tan grande\n");
 		else {
 			System.out.println(this.tabla[indice].toString());
 		}
